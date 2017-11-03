@@ -14,14 +14,22 @@ default_platform :ios
 # don't worry, fastlane will prompt you for required
 # info which you can add here later
 lane :beta do
-  # cocoapods
+  cocoapods
 
-  # increment_build_number
+  increment_build_number
 
+  cert
+  sigh(
+    adhoc: true,
+    force: true
+  )
+  use_automatic_signing
+  
   # build your iOS app
   gym(
+    workspace: "PVAmplitudeDemo.xcworkspace",
     scheme: "PVAmplitudeDemo",
-    export_method: "app-store"
+    export_method: "ad-hoc"
   )
 
   # upload to Testflight
