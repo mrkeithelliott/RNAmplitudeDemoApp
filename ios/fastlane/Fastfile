@@ -23,8 +23,7 @@ lane :beta do
     adhoc: true,
     force: true
   )
-  use_automatic_signing
-  
+
   # build your iOS app
   gym(
     workspace: "PVAmplitudeDemo.xcworkspace",
