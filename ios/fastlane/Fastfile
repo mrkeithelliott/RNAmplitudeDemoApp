@@ -19,11 +19,16 @@ lane :beta do
   increment_build_number
 
   cert
-  sigh(
-    adhoc: true,
-    force: true
-  )
+  #sigh(
+   # adhoc: true,
+   # force: true
+  #)
 
+  automatic_code_signing(
+    path: "PVAmplitudeDemo.xcworkspace",
+    use_automatic_signing: true
+  )
+  
   # build your iOS app
   gym(
     workspace: "PVAmplitudeDemo.xcworkspace",
