@@ -25,13 +25,13 @@ lane :beta do
   #)
 
   automatic_code_signing(
-    path: "PVAmplitudeDemo.xcworkspace",
+    path: "PVAmplitudeDemo.xcodeproj",
     use_automatic_signing: true
   )
-
+  
   # build your iOS app
   gym(
-    workspace: "PVAmplitudeDemo.xcproject",
+    workspace: "PVAmplitudeDemo.xcworkspace",
     scheme: "PVAmplitudeDemo",
     export_method: "ad-hoc"
   )
