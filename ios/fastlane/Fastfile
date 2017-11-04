@@ -19,10 +19,10 @@ lane :beta do
   increment_build_number
 
   cert
-  sigh(
-    adhoc: true,
-    force: true
-  )
+  #sigh(
+  #  adhoc: true,
+  #  force: true
+  #)
 
   enable_automatic_code_signing
 
