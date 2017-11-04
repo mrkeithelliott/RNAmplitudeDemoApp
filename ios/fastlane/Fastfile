@@ -24,6 +24,8 @@ lane :beta do
     force: true
   )
 
+  enable_automatic_code_signing
+
   # build your iOS app
   gym(
     workspace: "PVAmplitudeDemo.xcworkspace",
