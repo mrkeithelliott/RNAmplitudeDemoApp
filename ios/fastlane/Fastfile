@@ -26,8 +26,7 @@ lane :beta do
     workspace: "PVAmplitudeDemo.xcworkspace",
     scheme: "PVAmplitudeDemo",
     export_method: "development",
-    silent: true,
-    codesigning_identity: "iOS Developer: Keith Elliott"
+    silent: true
   )
 
   # upload to Testflight
