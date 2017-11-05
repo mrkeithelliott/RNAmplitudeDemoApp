@@ -25,7 +25,6 @@ lane :beta do
   #)
 
   automatic_code_signing(
-    path: "PVAmplitudeDemo.xcodeproj",
     use_automatic_signing: true
   )
   
