@@ -1401,7 +1401,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gittie.pvamplitudeexercise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gittie.demoamplitude;
 				PRODUCT_NAME = PVAmplitudeDemo;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1430,7 +1430,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gittie.pvamplitudeexercise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gittie.demoamplitude;
 				PRODUCT_NAME = PVAmplitudeDemo;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

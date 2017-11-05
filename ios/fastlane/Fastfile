@@ -22,12 +22,7 @@ lane :beta do
   sigh
   
   # build your iOS app
-  gym(
-    workspace: "PVAmplitudeDemo.xcworkspace",
-    scheme: "PVAmplitudeDemo",
-    export_method: "development",
-    silent: true
-  )
+  gym
 
   # upload to Testflight
   #pilot(
