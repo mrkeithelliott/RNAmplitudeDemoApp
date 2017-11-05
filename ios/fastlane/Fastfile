@@ -24,7 +24,9 @@ lane :beta do
   # build your iOS app
   gym(
     workspace: "PVAmplitudeDemo.xcworkspace",
-    scheme: "PVAmplitudeDemo"
+    scheme: "PVAmplitudeDemo",
+    export_method: "ad-hoc",
+    silent: true
   )
 
   # upload to Testflight
