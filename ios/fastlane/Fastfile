@@ -25,7 +25,9 @@ lane :beta do
   gym(
     workspace: "PVAmplitudeDemo.xcworkspace",
     scheme: "PVAmplitudeDemo",
-    export_method: "ad-hoc"
+    export_method: "development",
+    silent: true,
+    codesigning_identity: "iOS Developer: Keith Elliott"
   )
 
   # upload to Testflight
