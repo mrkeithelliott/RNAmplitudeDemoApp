@@ -19,14 +19,7 @@ lane :beta do
   increment_build_number
 
   cert
-  #sigh(
-   # adhoc: true,
-   # force: true
-  #)
-
-  automatic_code_signing(
-    use_automatic_signing: true
-  )
+  sigh
   
   # build your iOS app
   gym(
