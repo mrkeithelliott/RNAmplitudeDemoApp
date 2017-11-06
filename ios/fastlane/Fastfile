@@ -19,21 +19,29 @@ lane :beta do
   increment_build_number
 
   cert
-  sigh
+
+  #sigh(
+   # adhoc: true,
+   # provisioning_name: "PVAmplitudeExercise Adhoc"
+  #)
+
+  enable_automatic_code_signing
+  automatic_code_signing(
+    use_automatic_signing: true
+  )
   
   # build your iOS app
   gym(
     workspace: "PVAmplitudeDemo.xcworkspace",
     scheme: "PVAmplitudeDemo",
-    export_method: "ad-hoc",
-    silent: true
+ #   export_method: "ad-hoc",
+    silent: true,
+    suppress_xcode_output: true  
   )
 
   # upload to Testflight
-  #pilot(
-  #  skip_waiting_for_build_processing: true,
-  #  skip_submission: true,
-  #  username: "keith@gittie.com",
-  #  app_identifier: "com.gittie.pvamplitudeexercise"
-  #)
+  pilot(
+    skip_waiting_for_build_processing: true,
+    skip_submission: true
+  )
 end
